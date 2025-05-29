@@ -3933,3 +3933,17 @@ body.is-preload #sidebar nav ul li {
     background-attachment: scroll;
   }
 }
+
+/* Hide cog icon on smaller screens */
+@media screen and (max-width: 736px) {
+  .icon.solid.major.fa-cog {
+    display: none;
+  }
+}
+
+/* Hide all icons on smaller screens */
+@media screen and (max-width: 736px) {
+  .icon.solid.major {
+    display: none;
+  }
+}
