@@ -3947,3 +3947,38 @@ body.is-preload #sidebar nav ul li {
     display: none;
   }
 }
+
+/* Enhanced form styling */
+.fields .field input[type="text"],
+.fields .field input[type="email"],
+.fields .field textarea {
+  background: rgba(255, 255, 255, 0.05);
+  border: solid 1px rgba(255, 255, 255, 0.15);
+  border-radius: 0.25em;
+  color: rgba(255, 255, 255, 0.55);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fields .field input[type="text"]:focus,
+.fields .field input[type="email"]:focus,
+.fields .field textarea:focus {
+  border-color: #ffffff;
+  box-shadow: 0 0 0 1px #ffffff;
+}
+
+button.submit {
+  background: linear-gradient(45deg, #5e42a6, #b74e91);
+  border: none !important;
+  color: #ffffff !important;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+button.submit:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+button.submit:active {
+  transform: scale(0.95);
+}
